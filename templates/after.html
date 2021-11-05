@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   
+    <style>
+        h1 {
+            text-shadow: 2px 2px;
+            color: #eee;
+            font-family: sans-serif;
+            font-size: 60px;
+            font-weight: 600;
+            margin-top: 30px;
+            text-align: center;
+          }
+
+        h2 {
+            text-shadow: 1px 1px;
+            color: #eee;
+            font-family: sans-serif;
+            font-size: 30px;
+            font-weight: 600;
+            margin-top: 30px;
+            text-align: center;
+          }
+          
+          h3 {
+            text-shadow: 1px 1px;
+            color: #eee;
+            font-family: sans-serif;
+            font-size: 30px;
+            font-weight: 600;
+            margin-top: 30px;
+            text-align: center;
+          }
+        img {
+          width: 450px;
+          height: 400px;
+          object-fit: cover;
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+        }
+
+        div {
+            height: 800px;
+            background: linear-gradient(to bottom, #1d1f1f 0%, #293c49 78%)
+        }
+
+        a:link, a:visited {
+            background-color: rgb(238, 238, 238);
+            color: rgb(26, 10, 65);
+            padding: 14px 25px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-weight: bold;
+          }
+          
+        a:hover, a:active {
+            background-color: rgb(26, 10, 65);
+            text-align: center;
+            color: rgb(238, 238, 238);
+            font-weight: bold;
+        }
+
+        p.container {
+            text-align: center;
+        }
+
+        mark.churno {
+            color:black;
+            background: red;
+        }
+
+        mark.churnya {
+            color:black;
+            background: red;
+        }
+
+        </style>
+</head>
+<body>
+    <div><br><br>
+    <h1>PREDICTION</h1>
+
+    {% if data == 0 %}
+    <h2>Customer is <mark class="churno">NOT CHURNED!!</mark>You have successfully retained the customer!!!</h2>
+    <img src= "static\churnedno.gif">
+
+    {% else %}
+
+    <h2>Customer is <mark class="churnya">CHURNED!!.....</mark>You may have failed to retain the customer!!</h2>
+    <img src= "static\churnedyes.gif">
+
+    {% endif %}
+
+    <br><br>
+
+    <p class="container">
+    <a href='/'>GO BACK TO HOMEPAGE</a>
+    </p>
+
+</div>
+</body>
+</html>
+
+

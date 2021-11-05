@@ -1,0 +1,115 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet"  href="{{ url_for('static', filename='style_1.css')}}">
+        </head>
+    <body class="entire-webpage">
+        
+        <form method="POST", action="{{url_for('home')}}">
+            <center>
+            <div class="form">
+                <div class="title">Telecom Churn Prediction</div><br>
+                <div class="input-container ic1">
+                    <input type="number", name="a", class="input", id="myInput", placeholder=" ", onfocus="this.value=''" required/>
+                <div class="cut"></div>
+                <label for="What is your Gender?" class="placeholder">What is your Gender?</label>
+                </div>
+                <div class="input-container ic1">
+                    <input type="number", name="b", class="input", id="myInput", placeholder=" ", onfocus="this.value=''" required/>
+                <div class="cut"></div>
+                <label for="Are you a Senior Citizen?" class="placeholder">Are you a Senior Citizen?</label>
+                </div>
+                <div class="input-container ic1">
+                    <input type="number", name="c", class="input", id="myInput", placeholder=" ", onfocus="this.value=''" required/>
+                <div class="cut"></div>
+                <label for="Do you have a Partner?" class="placeholder">Do you have a Partner?</label>
+                </div>
+                <div class="input-container ic1">
+                    <input type="number", name="d", class="input", id="myInput", placeholder=" ", onfocus="this.value=''" required/>
+                <div class="cut"></div>
+                <label for="Do you have any Dependents?" class="placeholder">Do you have any Dependents?</label>
+                </div>
+                <div class="input-container ic1">
+                    <input type="number", name="e", class="input", id="myInput", placeholder=" ", onfocus="this.value=''" required/>
+                <div class="cut"></div>
+                <label for="What is the Tenure?" class="placeholder">What is the Tenure?</label>
+                </div>
+
+                <div class="input-container ic1">
+                    <input type="number", name="f", class="input", id="myInput", placeholder=" ", onfocus="this.value=''" required/>
+                <div class="cut"></div>
+                <label for="Is there a PhoneService?" class="placeholder">Is there a Phone Service?</label>
+                </div>
+                <div class="input-container ic1">
+                    <input type="number", name="g", class="input2", id="myInput", placeholder=" ", onfocus="this.value=''" required/>
+                <div class="cut"></div>
+                <label for="Are there multiple lines?" class="placeholder2">Are there multiple lines?</label>
+                </div>
+                <div class="input-container ic1">
+                    <input type="number", name="h", class="input2", id="myInput", placeholder=" ", onfocus="this.value=''" required/>
+                <div class="cut"></div>
+                <label for="Do you have Internet Service?" class="placeholder2">Do you have Internet Service?</label>
+                </div>
+                <div class="input-container ic1">
+                    <input type="number", name="i", class="input2", id="myInput", placeholder=" ", onfocus="this.value=''" required/>
+                <div class="cut"></div>
+                <label for="Is there Online Security?" class="placeholder2">Is there Online Security?</label>
+                </div>
+                <div class="input-container ic1">
+                    <input type="number", name="j", class="input2", id="myInput", placeholder=" ", onfocus="this.value=''" required/>
+                <div class="cut"></div>
+                <label for="Is there Online Backup?" class="placeholder2">Is there Online Backup?</label>
+                </div>
+                <div class="input-container ic1">
+                    <input type="number", name="k", class="input2", id="myInput", placeholder=" ", onfocus="this.value=''" required/>
+                <div class="cut"></div>
+                <label for="Do you have Device Protection?" class="placeholder2">Do you have Device Protection?</label>
+                </div>
+                <div class="input-container ic1">
+                    <input type="number", name="l", class="input2", id="myInput", placeholder=" ", onfocus="this.value=''" required/>
+                <div class="cut"></div>
+                <label for="Does your service have Tech Support?" class="placeholder2">Does your service have Tech Support?</label>
+                </div>
+                <div class="input-container ic1">
+                    <input type="number", name="m", class="input3", id="myInput", placeholder=" ", onfocus="this.value=''" required/>
+                <div class="cut"></div>
+                <label for="Does it provide StreamingTV services?" class="placeholder3">Does it provide StreamingTV services?</label>
+                </div>
+                <div class="input-container ic1">
+                    <input type="number", name="n", class="input3", id="myInput", placeholder=" ", onfocus="this.value=''" required/>
+                <div class="cut"></div>
+                <label for="Does it provide StreamingMovies services?" class="placeholder3">Does it provide StreamingMovies services?</label>
+                </div>
+                <div class="input-container ic1">
+                    <input type="number", name="o", class="input3", id="myInput", placeholder=" ", onfocus="this.value=''" required/>
+                <div class="cut"></div>
+                <label for="What is the type of Contract?" class="placeholder3">What is the type of Contract?</label>
+                </div>
+                <div class="input-container ic1">
+                    <input type="number", name="p", class="input3", id="myInput", placeholder=" ", onfocus="this.value=''" required/>
+                <div class="cut"></div>
+                <label for="Does the service provide Paperless Billing?" class="placeholder3">Does the service provide Paperless Billing?</label>
+                </div>
+                <div class="input-container ic1">
+                    <input type="number", name="q", class="input3", id="myInput", placeholder=" ", onfocus="this.value=''" required/>
+                <div class="cut"></div>
+                <label for="What mode of Payment Method is preferred?" class="placeholder3">What mode of Payment Method is preferred?</label>
+                </div>
+                <div class="input-container ic1">
+                    <input type="number", name="r", class="input3", id="myInput", placeholder=" ", step="0.01", onfocus="this.value=''" required/>
+                <div class="cut"></div>
+                <label for="What is the approximate Monthly Charges?" class="placeholder3">What is the approximate Monthly Charges?</label>
+                </div>
+
+
+                <input type="submit", value="predict", class="submit">
+
+            </div>
+            </center>
+        </form>
+    </body>
+</html>
